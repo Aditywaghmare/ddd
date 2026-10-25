@@ -1,1 +1,486 @@
-<h1>vvvvAmmyff loves aditya waghmare  from his heart-<<<< tausif   hello<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal World | Explore Wildlife</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f3;
+    color: #203528;
+}
+
+header {
+    background: #163d2b;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    min-height: 400px;
+    padding: 75px 20px;
+    text-align: center;
+    color: white;
+    background:
+      linear-gradient(#102c20a8, #102c20b5),
+      url("https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1800&q=85")
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.search-area {
+    margin-top: 25px;
+    display: flex;
+    gap: 8px;
+    width: min(500px, 100%);
+}
+
+.search-area input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 17px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-area button {
+    background: #b9ed83;
+    color: #163d2b;
+}
+
+main {
+    padding: 45px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    background: white;
+    color: #244632;
+    border: 1px solid #d7e4d7;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: #1e5839;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 23px;
+}
+
+.card {
+    background: white;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #173c2910;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px #173c2920;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    background: #dce8db;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #657368;
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #207044;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.empty {
+    text-align: center;
+    padding: 40px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background: #163d2b;
+    color: white;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        padding: 20px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header a {
+        margin: 0 12px 0 0;
+    }
+
+    main {
+        padding: 35px 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .hero {
+        min-height: 370px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌿 Animal World</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#animals">Animals</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Discover the Wild</h1>
+    <p>
+        Explore the amazing animal kingdom, from powerful lions
+        to colorful birds and fascinating ocean creatures.
+    </p>
+
+    <div class="search-area">
+        <input id="search" type="search"
+               placeholder="Search animals..." aria-label="Search animals">
+        <button id="searchButton">Search</button>
+    </div>
+</section>
+
+<main id="animals">
+    <div class="section-heading">
+        <h2>Explore Animals 🐾</h2>
+        <p>Meet some incredible creatures from around the world.</p>
+    </div>
+
+    <div class="filters" id="filters">
+        <button class="active" data-category="all">All Animals</button>
+        <button data-category="mammals">Mammals</button>
+        <button data-category="birds">Birds</button>
+        <button data-category="ocean">Ocean Life</button>
+        <button data-category="reptiles">Reptiles</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="empty" id="empty">
+        <h3>No animals found 🐾</h3>
+        <p>Try another animal name or category.</p>
+    </div>
+</main>
+
+<footer id="about">
+    <h3>🌍 Animal World</h3>
+    <p>Discover wildlife. Appreciate nature. Protect our planet.</p>
+    <p>Animal photos load from external image links.</p>
+    <p>© <span id="year"></span> Animal World</p>
+</footer>
+
+<script>
+const animals = [
+    {
+        name: "Lion",
+        category: "mammals",
+        description: "The powerful big cat known as the king of the jungle.",
+        image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80",
+        search: "lion wildlife africa"
+    },
+    {
+        name: "Elephant",
+        category: "mammals",
+        description: "A remarkable giant with a trunk and an excellent memory.",
+        image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80",
+        search: "elephant wildlife"
+    },
+    {
+        name: "Tiger",
+        category: "mammals",
+        description: "A striped predator with strength, speed and stealth.",
+        image: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=800&q=80",
+        search: "tiger wild cat"
+    },
+    {
+        name: "Fox",
+        category: "mammals",
+        description: "An agile animal known for its pointed ears and bushy tail.",
+        image: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=800&q=80",
+        search: "fox forest"
+    },
+    {
+        name: "Deer",
+        category: "mammals",
+        description: "A graceful forest animal, often seen in herds.",
+        image: "https://images.unsplash.com/photo-1484406566174-9da000fda645?auto=format&fit=crop&w=800&q=80",
+        search: "deer wildlife forest"
+    },
+    {
+        name: "Panda",
+        category: "mammals",
+        description: "A black-and-white bear that loves eating bamboo.",
+        image: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?auto=format&fit=crop&w=800&q=80",
+        search: "panda bear"
+    },
+    {
+        name: "Eagle",
+        category: "birds",
+        description: "A powerful bird of prey with impressive eyesight.",
+        image: "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=800&q=80",
+        search: "eagle bird"
+    },
+    {
+        name: "Parrot",
+        category: "birds",
+        description: "A colorful bird famous for its intelligence and calls.",
+        image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80",
+        search: "parrot colorful bird"
+    },
+    {
+        name: "Owl",
+        category: "birds",
+        description: "A night-active bird with excellent hearing and vision.",
+        image: "https://images.unsplash.com/photo-1579019163248-e7761241d9a9?auto=format&fit=crop&w=800&q=80",
+        search: "owl bird"
+    },
+    {
+        name: "Flamingo",
+        category: "birds",
+        description: "A distinctive wading bird with long legs and pink feathers.",
+        image: "https://images.unsplash.com/photo-1497206365907-f5e630693df0?auto=format&fit=crop&w=800&q=80",
+        search: "flamingo pink bird"
+    },
+    {
+        name: "Dolphin",
+        category: "ocean",
+        description: "A social marine mammal known for its intelligence.",
+        image: "https://images.unsplash.com/photo-1607153333879-c174d265f1d2?auto=format&fit=crop&w=800&q=80",
+        search: "dolphin sea ocean"
+    },
+    {
+        name: "Sea Turtle",
+        category: "ocean",
+        description: "An ocean traveler that has lived on Earth for millions of years.",
+        image: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80",
+        search: "sea turtle marine"
+    },
+    {
+        name: "Whale",
+        category: "ocean",
+        description: "A giant marine mammal that breathes air at the surface.",
+        image: "https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=800&q=80",
+        search: "whale ocean"
+    },
+    {
+        name: "Crocodile",
+        category: "reptiles",
+        description: "An ancient reptile adapted to life in water and on land.",
+        image: "https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=800&q=80",
+        search: "crocodile reptile"
+    },
+    {
+        name: "Chameleon",
+        category: "reptiles",
+        description: "A lizard with remarkable eyes and a long, quick tongue.",
+        image: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&w=800&q=80",
+        search: "chameleon lizard"
+    }
+];
+
+const gallery = document.getElementById("gallery");
+const searchInput = document.getElementById("search");
+const empty = document.getElementById("empty");
+const filterButtons = document.querySelectorAll("#filters button");
+
+let selectedCategory = "all";
+
+function renderAnimals() {
+    const query = searchInput.value.trim().toLowerCase();
+
+    const filtered = animals.filter(animal => {
+        const matchesCategory =
+            selectedCategory === "all" ||
+            animal.category === selectedCategory;
+
+        const matchesSearch =
+            (animal.name + " " + animal.description + " " + animal.search)
+            .toLowerCase().includes(query);
+
+        return matchesCategory && matchesSearch;
+    });
+
+    gallery.innerHTML = "";
+
+    filtered.forEach(animal => {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        const img = document.createElement("img");
+        img.src = animal.image;
+        img.alt = animal.name;
+        img.loading = "lazy";
+
+        img.onerror = function() {
+            this.alt = animal.name + " image unavailable";
+            this.style.display = "none";
+        };
+
+        const content = document.createElement("div");
+        content.className = "card-content";
+
+        const title = document.createElement("h3");
+        title.textContent = animal.name;
+
+        const description = document.createElement("p");
+        description.textContent = animal.description;
+
+        const link = document.createElement("a");
+        link.href = "https://en.wikipedia.org/wiki/" +
+                    encodeURIComponent(animal.name.replaceAll(" ", "_"));
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Learn more ↗";
+
+        content.append(title, description, link);
+        card.append(img, content);
+        gallery.appendChild(card);
+    });
+
+    empty.style.display = filtered.length ? "none" : "block";
+}
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        selectedCategory = button.dataset.category;
+
+        filterButtons.forEach(item =>
+            item.classList.toggle("active", item === button)
+        );
+
+        renderAnimals();
+    });
+});
+
+searchInput.addEventListener("input", renderAnimals);
+
+document.getElementById("searchButton").addEventListener("click", renderAnimals);
+
+searchInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") renderAnimals();
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderAnimals();
+</script>
+
+</body>
+</html>
